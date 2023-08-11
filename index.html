@@ -6,7 +6,6 @@
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -20,47 +19,45 @@
         <h1>Dashboard</h1>
       </div>
       <ul class="sections">
-        <li><span class="material-symbols-outlined">home</span>Home</li>
-        <li><span class="material-symbols-outlined">person</span>Profile</li>
-        <li><span class="material-symbols-outlined">chat_bubble</span>Messages</li>
-        <li><span class="material-symbols-outlined">history</span>History</li>
-        <li><span class="material-symbols-outlined">task</span>Tasks</li>
-        <li><span class="material-symbols-outlined">groups</span>Communities</li>
+        <li><span class="material-symbols-outlined">home</span><a href="#">Home</a></li>
+        <li><span class="material-symbols-outlined">person</span><a href="#">Profile</a></li>
+        <li><span class="material-symbols-outlined">chat_bubble</span><a href="#">Messages</a></li>
+        <li><span class="material-symbols-outlined">history</span><a href="#">History</a></li>
+        <li><span class="material-symbols-outlined">task</span><a href="#">Tasks</a></li>
+        <li><span class="material-symbols-outlined">groups</span><a href="#">Communities</a></li>
       </ul>
       <ul class="others">
-        <li><span class="material-symbols-outlined">settings</span>Settings</li>
-        <li><span class="material-symbols-outlined">help</span>Support</li>
-        <li><span class="material-symbols-outlined">verified_user</span>Privacy</li>
+        <li><span class="material-symbols-outlined">settings</span><a href="#">Settings</a></li>
+        <li><span class="material-symbols-outlined">help</span><a href="#">Support</a></li>
+        <li><span class="material-symbols-outlined">verified_user</span><a href="#">Privacy</a></li>
       </ul>
     </div>
 
-    <div class="header">
+    <header class="header">
       <div class="search">
         <span class="material-symbols-outlined search-icon">search</span>
-        <input type="search" class="search-input">
+        <input type="search" class="search-input" name="search">
       </div>
       <div class="notifications">
         <span class="material-symbols-outlined notification-icon">notifications</span>
-        <img src="./assets/images/user.svg" alt="" class="user">
+        <img src="./assets/images/user.svg" alt="User icon" class="user">
         <p>Morgan Oakley</p>
       </div>
       <div class="hello">
-        <img src="./assets/images/user.svg" alt="">
+        <img src="./assets/images/user.svg" alt="User icon">
         <div class="name-and-user">
           <p>Hi there,</p>
           <p>Morgan Oakley (@morgan)</p>
         </div>
-
       </div>
       <div class="buttons">
         <button type="button">New</button>
         <button type="button">Upload</button>
         <button type="button">Share</button>
       </div>
-    </div>
+    </header>
     
-    <div class="content">
-
+    <main class="content">
       <div class="projects">
         <h2>Your projects</h2>
         <div class="projects-description">
@@ -171,10 +168,8 @@
             </div>
           </div>
         </div>
-
-
       </div>
-    </div>
+    </main>
   </div>
 </body>
 </html>
