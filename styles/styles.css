@@ -25,7 +25,7 @@ body {
 }
 
 .sidebar {
-  border: 4px solid blue;
+  /*border: 4px solid blue;*/
   grid-row: 1 / 3;
   grid-column: 1 / 2;
   display: flex;
@@ -71,7 +71,7 @@ h1 {
 }
 
 .header {
-  border: 4px solid red;
+  /*border: 4px solid red;*/
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   display: grid;
@@ -113,6 +113,8 @@ h1 {
 .search-input {
   width: 80%;
   height: 1.5rem;
+  background-color: rgb(219, 219, 219);
+  border-radius: 15px;
 }
 
 .hello {
@@ -159,38 +161,127 @@ h1 {
 }
 
 .content {
-  border: 4px solid green;
+  /*border: 4px solid green;*/
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  background-color: rgb(219, 219, 219);
 }
 
 .projects {
-  border: 2px dotted black;
   grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
 }
 
+.projects,
+.announcements,
+.trending {
+  padding: var(--general-padding);
+}
+
+.content h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.content h3 {
+  font-size: 1rem;
+}
+
 .projects-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.projects-description > div {
+  box-shadow: -8px 0px #cfbb00;
+  background-color: white;
+  border-radius: 10px;
+  padding: var(--general-padding);
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-description p {
+  font-size: 0.8rem;
+  color: rgb(133, 133, 133);
+}
+
+.projects .icons {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .announcements {
-  border: 2px dotted black;
   grid-row-start: 1;
   display: flex;
   flex-direction: column;
 }
 
+.announcements-description {
+  background-color: white;
+  border-radius: 10px;
+  padding: var(--general-padding);
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements-description p {
+  font-size: 0.6rem;
+  color: rgb(133, 133, 133);
+}
+
+.announcements-description h3 {
+  font-size: 0.8rem;
+}
+
 .trending {
-  border: 2px dotted black;
   grid-row-start: 2;
   display: flex;
   flex-direction: column;
 }
+
+.trending-description {
+  background-color: white;
+  border-radius: 10px;
+  padding: var(--general-padding);
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.trending-description > div {
+  display: flex;
+  column-gap: 5px;
+}
+
+.trending-description img {
+  width: 25px;
+  height: auto;
+}
+
+.trending-description p {
+  font-size: 0.7rem;
+}
+
+.trending .user {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.trending .description {
+  color: rgb(133, 133, 133);
+  margin-top: 3px;
+}
+
+/*.user-and-phrase {
+  display: flex;
+  flex-direction: column;
+}*/
+
 
 
 
